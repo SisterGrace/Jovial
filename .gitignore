@@ -1,0 +1,135 @@
+# ============================================
+# Unity 通用 .gitignore 模板
+# 放在 Unity 项目根目录
+# 参考: https://github.com/github/gitignore/blob/main/Unity.gitignore
+# ============================================
+
+# ---------- 通用 (Node / Java / Python 等) ----------
+node_modules/
+dist/
+
+# Compiled Java class files
+*.class
+
+# Compiled Python bytecode
+*.py[cod]
+
+# Log files
+*.log
+
+# Maven
+target/
+
+# JetBrains IDE
+.idea/
+
+# Unit test reports
+TEST*.xml
+
+# OS 生成文件
+.DS_Store      # macOS
+Thumbs.db      # Windows
+
+# 编译产物
+*.app
+*.exe
+*.war
+
+# 大体积媒体文件（按需保留/删除）
+*.mp4
+*.tiff
+*.avi
+*.flv
+*.mov
+*.wmv
+
+# ---------- Unity 项目目录 ----------
+/[Ll]ibrary/
+/[Tt]emp/
+/[Oo]bj/
+/[Bb]uild/
+/[Bb]uilds/
+/[Ll]ogs/
+/[Uu]ser[Ss]ettings/
+/AssetsBundles/
+~*
+
+# MemoryCaptures 体积大且可能含敏感数据
+/[Mm]emoryCaptures/
+
+# 资源元数据：仅当对应资源也被忽略时才忽略其 .meta
+#!/[Aa]ssets/**/*.meta
+
+# 如需要可忽略 Asset Store 工具插件
+# /[Aa]ssets/AssetStoreTools*
+
+# 自动生成的 JetBrains Rider 插件
+/[Aa]ssets/Plugins/Editor/JetBrains*
+
+# ---------- IDE / 编辑器 ----------
+.vs/
+.vsconfig
+.gradle/
+
+# VS / Rider / Consulo 自动生成
+ExportedObj/
+.consulo/
+*.csproj
+*.unityproj
+*.sln
+*.slnx
+*.suo
+*.tmp
+*.user
+*.userprefs
+*.pidb
+*.booproj
+*.svd
+*.pdb
+*.mdb
+*.opendb
+*.VC.db
+
+# VSCode
+.vscode/extensions.json
+.vscode/launch.json
+.vscode/settings.json
+
+# ---------- Unity 自动生成文件 ----------
+# Unity 生成的 meta
+*.pidb.meta
+*.pdb.meta
+*.mdb.meta
+
+# 崩溃报告
+sysinfo.txt
+
+# ---------- 构建产物 ----------
+*.apk
+*.aab
+*.unitypackage
+
+# Crashlytics
+crashlytics-build.properties
+
+# Packed Addressables
+/[Aa]ssets/[Aa]ddressable[Aa]ssets[Dd]ata/*/*.bin*
+
+# 临时自动生成的 Android Assets
+/[Aa]ssets/[Ss]treamingAssets/aa.meta
+/[Aa]ssets/[Ss]treamingAssets/aa/*
+
+# ---------- Unity Burst / IL2CPP 输出 ----------
+*_BurstDebugInformation_DoNotShip/
+*_BackUpThisFolder_ButDontShipItWithYourGame/
+
+# ---------- 按需自定义 ----------
+# 按需开启以下内容或添加你的项目专属条目
+# /Assets/MaxSdk/
+# /Assets/MaxSdk.meta
+# /Assets/Firebase/
+# /Assets/Firebase.meta
+# /Assets/ExternalDependencyManager/
+# /Assets/ExternalDependencyManager.meta
+# Screenshots/
+# Bundles/
